@@ -1,0 +1,51 @@
+# Environments, caches, packaging
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+# Credentials and local overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+configs/local*.yaml
+# All local datasets; only documentation belongs in data/
+/data/**
+!/data/README.md
+# Analytical stores, data extracts, and model artifacts anywhere
+*.duckdb*
+*.db
+*.sqlite*
+*.csv
+*.tsv
+*.parquet
+*.arrow
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.h5
+*.pt
+*.pth
+*.zip
+/artifacts/
+/models/
+# Reports: retain only documentation and the authored template
+/reports/**
+!/reports/README.md
+!/reports/templates/
+/reports/templates/*
+!/reports/templates/model_validation_report.md

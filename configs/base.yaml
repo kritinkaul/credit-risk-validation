@@ -1,0 +1,18 @@
+# A valid FOUNDATION config, not an experiment-ready specification.
+project:
+  name: credit-risk-validation
+  stage: foundation
+dataset:
+  name: null
+  source: null
+target:
+  definition: null
+  horizon_days: null
+evaluation:
+  split_strategy: pending
+  observation_timestamp_column: null
+  borrower_id_column: null
+storage:
+  engine: duckdb
+  path: data/local/credit_risk.duckdb
+random_seed: 42
